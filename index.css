@@ -1,0 +1,27 @@
+body {
+ background-image: url('images/close-up-dew-glass-moisture-459277.jpg');
+ background-size: cover;
+ background-position: center;
+}
+.centered{
+    margin: 0px;
+padding:0px;
+float: left;
+width:100%;
+position:absolute;
+top: 50%;
+transform: translateY(-50%) translateX(-50%);
+left:50%;
+}
+
+.btn-large {
+ border: 2px solid white;
+ background-color: Transparent;
+ margin-right: 10px;   
+}
+
+img {
+width: 10%;
+padding: 30px;
+
+}
