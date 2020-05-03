@@ -1,14 +1,10 @@
 body {
   
- background-image: url('images/close-up-dew-glass-moisture-459277.jpg');
+ background-image: url('images/close-up-dew-glass-moisture-459277_Brigther.png');
  background-size: cover;
- background-position: center;
- 
+ background-position: center; 
 }
-body::after {
-    filter: brightness(200%);
 
-}
 .centered{
 padding-top: 100px;
 float: left;
@@ -28,10 +24,15 @@ left:50%;
 }
 
 img {
-width: 115px;
+width: 100px;
 padding: 30px;
 }
 
+img:hover {
+    width: 101px;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(6px 5px 6px rgb(108, 217, 206));
+    }
 
 .text-effect {
     color: wheat;
@@ -47,11 +48,12 @@ padding: 30px;
                 -7px 7px 0 rgb(-188,-188,-224),
                 -8px 8px 0 rgb(-216,-216,-252),
                 -9px 9px  0 rgb(-244,-244,-280),
-                -10px 10px 9px rgba(108,217,206,0.16),
-                -10px 10px 1px rgba(108,217,206,0.5),
-                100px 200px 9px rgba(108,217,206,.2);
+                -10px 10px 90px rgba(108,217,206,0.16),
+                -10px 10px 90px rgba(108,217,206,0.5),
+                0px 0px 120px rgba(108,217,206,.2);
                 word-spacing: 6px;
+                -webkit-filter: drop-shadow(5px 5px 50px #222);
+  filter: drop-shadow(3px 3px 3px rgb(108, 217, 206));
                   
 }
-
 
