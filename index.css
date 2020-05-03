@@ -29,14 +29,14 @@ padding: 30px;
 }
 
 img:hover {
-    width: 101px;
+    width: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(6px 5px 6px rgb(108, 217, 206));
     }
 
 .text-effect {
     color: wheat;
-  font-family: Changa One;
+  font-family: Impact;
   font-weight: bold;
    text-shadow: 0px 0px 0 rgb(7,7,-29),
                 -1px 1px 0 rgb(-21,-21,-57),
@@ -57,3 +57,27 @@ img:hover {
                   
 }
 
+.text-effect-btn {
+    color: wheat;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: 800;
+  text-shadow: 0px 0px 0 rgb(7,7,-29),
+                -1px 1px 0 rgb(-21,-21,-57),
+                -2px 2px 0 rgb(-49,-49,-85),
+                -3px 3px 0 rgb(-77,-77,-113),
+                -4px 4px 0 rgb(-104,-104,-140),
+                -5px 5px 0 rgb(-132,-132,-168),
+                -6px 6px 0 rgb(-160,-160,-196),
+                -7px 7px 0 rgb(-188,-188,-224),
+                -8px 8px 0 rgb(-216,-216,-252),
+                -9px 9px  0 rgb(-244,-244,-280),
+             /*    -10px 10px 90px rgba(108,217,206,0.16),
+                -10px 10px 90px rgba(108,217,206,0.5),
+                0px 0px 120px rgba(108,217,206,.2);
+                word-spacing: 6px;
+                -webkit-filter: drop-shadow(5px 5px 50px #222);
+  filter: drop-shadow(3px 3px 3px rgb(108, 217, 206)); */
+  
+                   
+}
