@@ -1,5 +1,6 @@
-body {
-  height: 3000px;
+#about {
+background-color: grey;
+height: 500px;
 }
 
 .btn-large {
@@ -20,14 +21,15 @@ transform: translateY(-50%) translateX(-50%);
 left:50%;
 }
 
-.document-container {
-  display: flex;
-  flex-wrap: nowrap;
+footer {
+ background-color: black;
+ height: 100px;
+
 }
 
-#header {
+#header-id {
  padding: 0;
- height: 50px;
+ height: 500px;
 }
 
 header {
@@ -51,18 +53,15 @@ padding: 30px;
     }
 
 #menu {
-padding-top: 457px;
-
-} 
-nav {
   position: sticky;
-top: 400px;
+  top:0;
   
-}
+  
+} 
+
 #projects {
   background-color: 400px;
-  padding-top: 932px;
-  background-color: black;
+ height: 600px; 
  }
 
 .text-effect {
