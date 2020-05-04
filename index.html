@@ -55,7 +55,7 @@
        <div class = "row">
           <div class = "input-field col s11">
              <i class = "material-icons prefix">account_circle</i>
-             <input class="materialize-textfield"  id = "name"
+             <input class="materialize-textfield"  id = "name"  name = "name"
                 type="text"   class = "active validate" required />
              <label for = "name"><bold>Name</bold></label>
           </div>         
@@ -64,7 +64,7 @@
        <div class = "row">
           <div class = "input-field col s11">
             <i class = "material-icons prefix">email</i>  
-             <input id = "email" type = "email"
+             <input id = "email" name = "email" type = "email"
                 class = "validate">
              <label for = "email"><bold>Email</bold></label>
           </div>
@@ -73,12 +73,12 @@
        <div class = "row">
           <div class = "input-field col s11">
             <i class = "material-icons prefix">comment</i>
-             <textarea id = "Comment" class = "materialize-textarea"></textarea>
+             <textarea id = "Comment" name= "comment" class = "materialize-textarea"></textarea>
              <label for = "Comment"><bold>Comment</bold></label>
           </div>
        </div>
        <div class="row">
-       <button class="btn-large text-effect-btn" type="submit" form="contact-form" value="Submit">Submit &nbsp;  <i class = "small material-icons prefix">send</i></button>
+       <button class="btn-large text-effect-btn" id="submit-form" type="submit" value="Submit">Submit &nbsp;  <i class = "small material-icons prefix">send</i></button>
        </div>
     </div>
    </div>  
@@ -88,7 +88,8 @@
 
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jquery.serializeObject.js"></script>
+<script src="google_DataSenderSheet.js"></script>
 </body>
 </html>
