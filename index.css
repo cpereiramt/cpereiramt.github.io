@@ -41,6 +41,10 @@ header {
   height: 100%;
  }
 
+ html {
+  scroll-behavior: smooth;
+}
+ 
 .icon {
 width: 100px;
 padding: 30px;
