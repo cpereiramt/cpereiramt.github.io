@@ -5,7 +5,7 @@ $('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
     url: url,
-    method: "POST",
+    method: "GET",
     dataType: "json",
     data: $form.serializeObject()
   }).then(
