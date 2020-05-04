@@ -1,14 +1,20 @@
 #about {
-background-color: grey;
+background-color: rgb(245,245,245);
 height: 500px;
 }
 
-.btn-large {
+.white-btn {
   border: 2px solid white;
   background-color: Transparent;
   background-repeat: no-repeat;
   margin-right: 10px;
   border-radius: 10%;
+
+ }
+
+ .card {
+   padding: 20px;
+   z-index: 2;
  }
 
 .centered{
@@ -21,10 +27,14 @@ transform: translateY(-50%) translateX(-50%);
 left:50%;
 }
 
+#contact {
+ padding-top: 65px;
+ background-color:rgb(245,245,245);
+}
+
 footer {
  background-color: black;
  height: 100px;
-
 }
 
 #header-id {
@@ -59,8 +69,7 @@ padding: 30px;
 #menu {
   position: sticky;
   top:0;
-  
-  
+  z-index: 4;  
 } 
 
 #projects {
