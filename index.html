@@ -51,7 +51,12 @@
     <div class="container">
     <div class="card hoverable">    
    <div class = "row">
-    <form class = "col s12" id="contact-form">
+
+    <form class = "gform col s12" id="contact-form" method="POST" 
+    data-email="example@email.net"
+    action="https://script.google.com/macros/s/AKfycbw_U0Z5rg5xhJtvWIYnh1USZ2zsFmHntGborqqOfAYp3UpGiP4/exec"
+    >
+        <div class="form-elements">
        <div class = "row">
           <div class = "input-field col s11">
              <i class = "material-icons prefix">account_circle</i>
@@ -80,8 +85,8 @@
        <div class="row">
        <button class="btn-large text-effect-btn" id="submit-form" type="submit" value="Submit">Submit &nbsp;  <i class = "small material-icons prefix">send</i></button>
        </div>
-    </div>
-   </div>  
+    </div>  
+
     </form>   
 </section>
 <footer>
@@ -89,7 +94,6 @@
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="jquery.serializeObject.js"></script>
-<script src="google_DataSenderSheet.js"></script>
+<script data-cfasync="false" src="form-submission-handler.js"></script>
 </body>
 </html>
