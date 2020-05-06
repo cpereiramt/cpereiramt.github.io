@@ -1,6 +1,6 @@
 #about {
 background-color: rgb(245,245,245);
-height: 500px;
+height: 100vh;
 }
 
 .white-btn {
@@ -13,16 +13,17 @@ height: 500px;
  }
 
  .card {
-   padding: 20px;
+   padding: 25px;
+   margin-top: 50px;
    z-index: 2;
  }
 
 .centered{
 padding-top: 100px;
 float: left;
-width:80%;
+width:100%;
 position:absolute;
-top: 50%;
+top: 40%;
 transform: translateY(-50%) translateX(-50%);
 left:50%;
 }
@@ -30,6 +31,7 @@ left:50%;
 #contact {
  padding-top: 65px;
  background-color:rgb(245,245,245);
+ height: 100vh;
 }
 
 footer {
@@ -39,11 +41,11 @@ footer {
 
 #header-id {
  padding: 0;
- height: 500px;
+ height: 100vh
 }
 
 header {
-  height: 500px;
+ height: 100vh;
 }
 
 #background-img {
@@ -74,7 +76,7 @@ padding: 30px;
 
 #projects {
   background-color: 400px;
- height: 600px; 
+ height: 100vh; 
  }
 
 .text-effect {
