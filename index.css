@@ -1,3 +1,11 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media  (max-width: 800px) and (orientation: landscape) { 
+
+ 
+
+}
+
 #about {
 background-color: rgb(245,245,245);
 height: 100vh;
@@ -38,6 +46,7 @@ footer {
  background-color: black;
  height: 100px;
 }
+
 
 #header-id {
  padding: 0;
