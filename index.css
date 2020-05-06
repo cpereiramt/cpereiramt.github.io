@@ -1,8 +1,17 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media  (max-width: 800px) and (orientation: landscape) { 
-
- 
+  .card {
+    padding: 25px;
+    margin-top: 50px;
+    z-index: 2;
+    
+  }
+  #contact {
+    padding-top: 15px;
+    background-color:rgb(245,245,245);
+    height: 180vh;
+   }
 
 }
 
@@ -21,8 +30,9 @@ height: 100vh;
  }
 
  .card {
-   padding: 25px;
-   margin-top: 50px;
+   padding: 10px;
+   margin-top: 5px;
+    height: 86vh;
    z-index: 2;
  }
 
@@ -37,9 +47,9 @@ left:50%;
 }
 
 #contact {
- padding-top: 65px;
+ padding-top: 10vh;
  background-color:rgb(245,245,245);
- height: 100vh;
+ height: 110vh;
 }
 
 footer {
@@ -129,3 +139,11 @@ padding: 30px;
                    
 }
 
+textarea {
+ height: 6rem !important;
+}
+
+.row {
+margin-bottom: 10px;
+
+}
