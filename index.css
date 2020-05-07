@@ -1,24 +1,24 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media  (max-width: 800px) and (orientation: landscape) { 
-  .card {
-    padding: 25px;
-    margin-top: 50px;
-    z-index: 2;
-    
-  }
-  #contact {
-    padding-top: 15px;
-    background-color:rgb(245,245,245);
-    height: 180vh;
-   }
+  
 
 }
 
 #about {
 background-color: rgb(245,245,245);
-height: 100vh;
+padding-top: 10vh;
+height: 100vh
+
 }
+
+.about-row {
+  padding-left: 10vw;
+  width: 100%;
+}
+.about-image {
+  width: 100px;  
+ }
 
 .white-btn {
   border: 2px solid white;
@@ -28,10 +28,15 @@ height: 100vh;
   border-radius: 10%;
 
  }
+ .card-about-details {
+   margin: 4rem;
+   padding: 10rem;
+  }
 
- .card {
+
+ .card-contact {
    padding: 10px;
-   margin-top: 5px;
+   margin-top: 8px;
     height: 86vh;
    z-index: 2;
  }
@@ -49,7 +54,7 @@ left:50%;
 #contact {
  padding-top: 10vh;
  background-color:rgb(245,245,245);
- height: 110vh;
+ height: 120vh;
 }
 
 footer {
@@ -60,7 +65,7 @@ footer {
 
 #header-id {
  padding: 0;
- height: 100vh
+ height: 100vh;
 }
 
 header {
@@ -94,10 +99,9 @@ padding: 30px;
 } 
 
 #projects {
-  background-color: 400px;
- height: 100vh; 
+  height: 120vh; 
  }
-
+  
 .text-effect {
     color: wheat;
   font-family: Impact;
