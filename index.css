@@ -5,7 +5,7 @@
 #about {
   background-color: rgb(245, 245, 245);
   padding-top: 10vh;
-  height: 180vh;
+  height: 200vh;
 }
 
 .about-row {
@@ -26,6 +26,10 @@
 .card-about-details {
   margin: 4rem;
   padding: 10rem;
+}
+
+card-about-profile {
+  margin: 15px;
 }
 
 .card-contact {
