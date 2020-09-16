@@ -1,19 +1,37 @@
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 800px) and (orientation: landscape) {
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  margin: auto 0;
 }
 
 #about {
   background-color: rgb(245, 245, 245);
-  padding-top: 10vh;
-  height: 200vh;
+  padding-top: 1vh;
+  height: 130vh;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .about-row {
   padding-left: 10vw;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .about-image {
-  width: 100px;
+  width: 50px;
+  margin: auto 0;
+  align-self: center
+}
+
+#id-about {
+  font-size: 1.4vw;
 }
 
 .white-btn {
@@ -28,14 +46,15 @@
   padding: 10rem;
 }
 
-card-about-profile {
-  margin: 15px;
-}
+.card-about-profile {
+  padding: 10px;
+  margin-left: -150px;
+ }
 
 .card-contact {
   padding: 10px;
   margin-top: 8px;
-  height: 86vh;
+  height: 71vh;
   z-index: 2;
 }
 
