@@ -127,6 +127,7 @@ padding: 10px;
 #projects {
   height: 102vh;
   padding-top: 5vh;
+  padding-right: 5vh;
 }
 
 .text-effect {
@@ -167,9 +168,33 @@ textarea {
   margin-bottom: 10px;
 }
 
-#img-construction {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 19%;
+.projects-card {
+  display:flex;
+  justify-content:center;
+  padding-bottom: 5vh;
+  
+}
+.projects-card-details {
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:18px;
+  color:white;
+  position: absolute;
+  padding-top: -50vh;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  margin: 2%;
+  text-align:justify;
+  width: 600px; 
+}
+
+.project-image {
+  filter: brightness(50%);
+  opacity: 0.8;
+  min-width: 300px;
+  max-width: 1000px;
 }
