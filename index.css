@@ -167,9 +167,19 @@ textarea {
   margin-bottom: 10px;
 }
 
-#img-construction {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 19%;
+.projects-card {
+  display:flex;
+  align-items: center;
+  justify-content:center;
+  
+}
+.projects-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  margin: 2%;
+  text-align:justify;
+  width: 250px; 
 }
