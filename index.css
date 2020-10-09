@@ -125,7 +125,7 @@ padding: 10px;
 }
 
 #projects {
-  height: 190vh;
+  height: 104vh;
   padding-top: 1vh;
   padding-right: 5vh;
 }
@@ -170,12 +170,14 @@ textarea {
 
 
 .carousel {
-  height: 900px;
+  height: 500px;
 }
 
 .carousel 
 .carousel-item  {
-  width: 500px !important;
-  height: 500px !important;
+  width: 300px !important;
+  height: 300px !important;
+  margin-top: -100px;
+  padding-bottom: -500px;
 }
 
