@@ -74,7 +74,7 @@ nav.nav-center ul li a {
 }
 
 .header-text-effect {
-  color: rgb(241, 205, 136);
+  color: rgb(255, 250, 241);
   font-family: Impact;
   font-weight: bolder;
   line-height: 5vh;
@@ -88,8 +88,8 @@ nav.nav-center ul li a {
     -10px 10px 90px rgba(108, 217, 206, 0.5),
     0px 0px 120px rgba(108, 217, 206, 0.2);
   word-spacing: 6px;
-  -webkit-filter: drop-shadow(5px 5px 50px #222);
-  filter: drop-shadow(3px 3px 3px rgb(88, 95, 94));
+  -webkit-filter: drop-shadow(5px 5px 50px rgb(128, 229, 145));
+  filter: drop-shadow(10px 10px 10px rgb(108, 217, 206));
 }
 
 .header-button-innerText {
