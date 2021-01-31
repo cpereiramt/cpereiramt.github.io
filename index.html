@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
      <!-- Compiled and minified JavaScript -->
+     <script src="date.js" defer></script>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link rel="stylesheet" href="index.css">
     
@@ -21,12 +22,12 @@
        <div class="row">
         <h3 class="white-text header-text-effect">Clayton Pereira</h3> 
        <h6 class="white-text header-text-effect">Fullstack Developer </h6>       
-       <p class="white-text flow-text header-text-effect"> HTML5 |  CSS3 |  JavaScript  |  Reactjs  |  Restful Api Presentation <br>
-          Gatsby | Nodejs | Express | MongoDb | 
+       <p class="white-text flow-text header-text-effect"> HTML5 |  CSS3 |  JavaScript  |  ReactJS  |  Restful Api Presentation <br>
+          Gatsby | NodeJS | ExpressJS | MongoDB | 
        </p>
        <p class="white-text flow-text header-text-effect">Making your ideas come true</p>
        <div id="header-button-list">
-       <a href="#about"> <button class="white-text btn-large white-btn header-button"><span class="header-button-innerText">About</span></button></a>
+       <a href="#about-section"> <button class="white-text btn-large white-btn header-button"><span class="header-button-innerText">About</span></button></a>
         <a href="#projects"> <button class="white-text btn-large white-btn" ><span class="header-button-innerText">Projects</span></button> </a>
             <a href="#contact"><button class="white-text btn-large white-btn" ><span class="header-button-innerText">Contact Me</span></button></a>
          </div>       
@@ -36,7 +37,7 @@
     </div>
  </header>
  </section>
- <section id="menu">   
+ <section id="menu-section">   
    <nav class="black nav-center">
       <div class="nav-wrapper container">
         <ul>        
@@ -47,69 +48,71 @@
    </div>
    </nav>
 </section>
-<!-- <section id="about">
+<section id="about-section">
    <h3 class="center teal-text">ABOUT</h3>
       <div class="about-row">
          <div class="row">
-            <div class="card-about-details col m2 s2">
+            <div class="container">
+               <div class="card hoverable about-profile-card">
+            <div class="row center">              
+               <img id="about-Profile-picture" class="center col s6" src="images/profilePicture.jpeg" alt="" srcset="">
+               <p class="center">Fullstack developer from brazil, working with following technologies : 
+                  <span style="font-weight: 700;">Javascript, Html, CSS, ReactJS, Gatsby, NodeJS, 
+                     ExpressJS, MongoDB, Java (SpringBoot)  
+                  </span> 
+               </p>
+            </div> 
+            </div>
+         </div>
+            <div class="about-details-card">
                <img class=" about-image" src="images/Clean-Layout.png" alt="" srcset="">
                <h5 class="center">Clean Layout</h5>
                <p class="center">using the <span>Kiss principle </span> , the simplicity is the last
                    step of sophistication</p>
             </div>
-            <div class="card-about-details col m2 s2">
+            <div class="about-details-card">
                <img class="about-image" src="images/fast.svg" alt="" srcset="">
                <h5 class="center" >Fast</h5>
                <p class="center">newest technologies, that bring performance to another level 
                   using jamstack.</p>
             </div>
-            <div class="card-about-details col m2 s2">
+            <div class="about-details-card">
                <img class="about-image" src="images/responsive.png" alt="" srcset="">
                <h5 class="center">Responsive</h5>
                <p  class="center">Good looking in all screen sizes . </p>
             </div>
-            <div class="card-about-details col m2 s2">
+            <div class="about-details-card">
                <img class="about-image" src="images/UI-UX.svg" alt="" srcset="">
                <h5 class="center">Ux Design</h5>
                <p class="center" >Always thinking in a graceful user experience .</p>
             </div>
-
             <div class="row"></div>
-               <div class="card-about-details col m2 s2">
+               <div class="about-details-card">
                   <img class=" about-image" src="images/Gatsby.png" alt="" srcset="">
                   <h5 class="center">Gatsby</h5>
                   <p class="center"> </p>Building modern sites that are blazing fast.</p>
                </div>
-               <div class="card-about-details col m2 s2">
+               <div class="about-details-card">
                   <img class="about-image" src="images/Mongodb.png" alt="" srcset="">
                   <h5 class="center" > MongoDB</h5>
                   <p class="center"> Better performance in data based web apps .</p>
                </div>
-               <div class="card-about-details col m2 s2">
+               <div class="about-details-card">
                   <img class="about-image" src="images/Reactjs.png" alt="" srcset="">
                   <h5 class="center">ReactJS</h5>
                   <p class="center">Library for easy creation of user interfaces, using javascript variant.</p>
                </div>
-               <div class="card-about-details col m2 s2">
+               <div class="about-details-card">
                   <img class="about-image" src="images/NodeJS.jpg" alt="" srcset="">
                   <h5 class="center">NodeJS</h5>
                   <p class="center"> easy Scalability and maintenance of code . </p>
                </div>       
       </div>
-      <div class="container">
-         <div class="card hoverable card-about-profile center-align">
-      <div class="row">              
-         <img id="Profile-picture" class="center col s6" src="images/profilePicture.jpeg" alt="" srcset="">
-         <p class="col s6" id="id-about">Fullstack developer from brazil, working with following technologies : 
-            <span style="font-weight: 600;">Reactjs,Javascript, Html, CSS, Gatsby, NodeJs, ExpressJs, MongoDb </span> .
-         </p>
-      </div> 
-      </div>
-   </div>
+     
    </div>
 
 </section>
-<section id="projects">
+<!-- <section id="projects">
 <h1 class="center teal-text">Projects</h1>
 <div class="carousel">
 <div class="carousel-item">
@@ -190,7 +193,7 @@
 <section id="footer">
 <footer>
    <br>
-  <h6 class="white-text flow-text center">Clayton Pereira 2020</h6>
+  <h6 class="white-text flow-text center">Clayton Pereira <span id="current_year">2020</span></h6>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

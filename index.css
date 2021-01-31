@@ -1,6 +1,22 @@
+.about-image {
+  width: 50%;
+  margin-left: 20%;
+  display: flex;
+}
+
+#about-Profile-picture {
+  border-radius: 46%;
+  width: 150px;
+  padding: 10px;  
+  }
+
 body {
   display: flex;
   flex-direction: column;
+}
+
+.about-details-card {
+  margin: 2rem;
 }
 
 #footer {
@@ -8,7 +24,7 @@ body {
   height: 100px;
 }
 
-#menu {
+#menu-section {
   position: sticky;
   top: 0;
   z-index: 4;
@@ -54,7 +70,7 @@ nav.nav-center ul li a {
 }
 
 .row {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .header-text-effect {
