@@ -119,6 +119,40 @@ nav.nav-center ul li a {
   margin-right: 10px;
   border-radius: 10%;
 }
+
+@media screen and (max-width: 285px) {
+  .nav-wrapper li a {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 530px) { 
+  .header-text-effect {
+    line-height: 5vh;
+    font-size: 1.7rem;
+}
+}
+
+@media screen and (min-width: 531px) and (max-width: 700px) { 
+  .header-text-effect {
+    line-height: 7vh;
+    font-size: 2rem;
+}
+}
+
+@media screen and (min-width: 701px) and (max-width: 900px) { 
+  .header-text-effect {
+    line-height: 8vh;
+    font-size: 2.2rem;
+}
+}
+
+@media screen and (min-width: 901px) { 
+  .header-text-effect {
+    line-height: 8vh;
+    font-size: 2.4rem;
+}
+}
 /* 
 
 body {
