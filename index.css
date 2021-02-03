@@ -19,6 +19,12 @@ body {
   margin: 2rem;
 }
 
+#about--medium-large-screen-section {
+display: none;
+
+}
+
+
 #footer {
   background-color: black;
   height: 100px;
@@ -140,6 +146,13 @@ nav.nav-center ul li a {
 }
 
 @media screen and (min-width: 901px) {
+   
+  .about-image {
+    width: 30%;
+    margin-left: 35%;
+    display: flex;
+  }
+  
 
   .carousel {
     height: 700px;
@@ -172,7 +185,14 @@ nav.nav-center ul li a {
   display: none;
 }
 
+#about-mobile-section {
+  display: none;
 }
+
+#about--medium-large-screen-section {
+  display: block;
+  
+  }
 /* 
 
 body {
