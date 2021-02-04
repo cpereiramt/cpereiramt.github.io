@@ -19,7 +19,7 @@ body {
   margin: 2rem;
 }
 
-#about--medium-large-screen-section {
+#about-medium-large-screen-section {
 display: none;
 
 }
@@ -30,11 +30,16 @@ display: none;
   height: 100px;
 }
 
-#menu-section {
+#menu-mobile-section {
   position: sticky;
   top: 0;
   z-index: 4;
 }
+
+#menu-medium-large-screen-section {
+ display: none;
+}
+
 
 nav.nav-center ul {
   text-align: center;
@@ -118,6 +123,10 @@ nav.nav-center ul li a {
   border-radius: 10%;
 }
 
+#header-button-list-large {
+ display: none;
+}
+
 @media screen and (max-width: 285px) {
   .nav-wrapper li a {
     font-size: 10px;
@@ -154,6 +163,16 @@ nav.nav-center ul li a {
   }
   
 
+  .about-profile-card {
+    max-width: 60%;
+    left: 20%;
+    margin-top: 10vh;
+  }
+  
+  .about-text {
+   padding-top: 7vh;
+  }
+
   .carousel {
     height: 700px;
   }
@@ -163,9 +182,26 @@ nav.nav-center ul li a {
     width: 500px !important;
     height: 500px !important;
     margin-top: -100px;
-    padding-bottom: -500px;
+    padding-bottom: -100px;
+  }
+  
+  .contact-card {
+      max-width: 70%;
+      left: 20%;
+      height: 400px;
+      margin-top: 10vh;
+  }
+  
+  #contact-section {
+  margin-bottom: 60px;
   }
 
+  .contact-card > .row {
+    max-width: 70%;
+    left: 20%;
+    height: 400px;
+    padding: 1vh;
+}
   .header-text-effect {
     line-height: 8vh;
     font-size: 2.4rem;
@@ -179,6 +215,7 @@ nav.nav-center ul li a {
 
 #projects-medium-large-screen-section {
   display: block;
+  margin-bottom: -200px;
 }
 
 #projects-mobile-screen-section {
@@ -189,10 +226,36 @@ nav.nav-center ul li a {
   display: none;
 }
 
-#about--medium-large-screen-section {
+#about-medium-large-screen-section {
   display: block;
   
   }
+
+#header-background-img {
+    width: 99vw;
+    height: 100vh;
+  }
+
+  #menu-mobile-section {
+   display: none;
+  }
+  
+  #menu-medium-large-screen-section {
+    display: block;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+  }
+
+
+  #header-button-list-large {
+    display: block;
+  }
+   
+  #header-button-list-mobile {
+    display: none;
+  }
+}
 /* 
 
 body {

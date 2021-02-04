@@ -41,23 +41,45 @@
             <p class="white-text flow-text header-text-effect">
               Making your ideas come true
             </p>
-            <div id="header-button-list">
-              <a href="#about-section">
+
+            <div id="header-button-list-mobile">
+              <a href="#about-mobile-section">
                 <button class="white-text btn-large white-btn header-button">
                   <span class="header-button-innerText">About</span>
                 </button></a
               >
-              <a href="#projects">
+              <a href="#projects-mobile-screen-section">
                 <button class="white-text btn-large white-btn">
                   <span class="header-button-innerText">Projects</span>
                 </button>
               </a>
-              <a href="#contact"
+              <a href="#contact-section"
                 ><button class="white-text btn-large white-btn">
                   <span class="header-button-innerText">Contact Me</span>
                 </button></a
               >
             </div>
+            
+
+            <div id="header-button-list-large">
+              <a href="#about-medium-large-screen-section">
+                <button class="white-text btn-large white-btn header-button">
+                  <span class="header-button-innerText">About</span>
+                </button></a
+              >
+              <a href="#projects-medium-large-screen-section">
+                <button class="white-text btn-large white-btn">
+                  <span class="header-button-innerText">Projects</span>
+                </button>
+              </a>
+              <a href="#contact-section"
+                ><button class="white-text btn-large white-btn">
+                  <span class="header-button-innerText">Contact Me</span>
+                </button></a
+              >
+            </div>
+
+
             <a href="https://github.com/cpereiramt"
               ><img class="header-icon" src="images/github-11-xxl.png" alt=""
             /></a>
@@ -68,13 +90,24 @@
         </div>
       </header>
     </section>
-    <section id="menu-section">
+    <section id="menu-mobile-section">
       <nav class="black nav-center">
         <div class="nav-wrapper container">
           <ul>
-            <li><a href="#about">About</a></li>
+            <li><a href="#about-mobile-section">About</a></li>
             <li><a href="#projects-mobile-screen-section">Projects</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="menu-medium-large-screen-section">
+      <nav class="black nav-center">
+        <div class="nav-wrapper container">
+          <ul>
+            <li><a href="#about-medium-large-screen-section">About</a></li>
+            <li><a href="#projects-medium-large-screen-section">Projects</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
           </ul>
         </div>
       </nav>
@@ -179,9 +212,9 @@
         </div>
       </div>
     </section>
-    <section id="about--medium-large-screen-section">
+    <section id="about-medium-large-screen-section">
       <h3 class="center teal-text">ABOUT</h3>
-            <div class="card hoverable about-profile-card">
+            <div class="card hoverable about-profile-card center">
               <div class="row center">
                 <img
                   id="about-Profile-picture"
@@ -190,7 +223,7 @@
                   alt=""
                   srcset=""
                 />
-                <p class="center">
+                <p class="center about-text">
                   Fullstack developer from brazil, working with following
                   technologies :
                   <span style="font-weight: 700"
@@ -588,10 +621,10 @@
         </div>
       </div>
     </section>
-    <section id="contact">
+    <section id="contact-section">
       <h3 class="center teal-text">CONTACT</h3>
       <div class="container">
-        <div class="card card-contact hoverable">
+        <div class="card contact-card hoverable">
           <div class="row">
             <form
               class="gform col s12"
@@ -633,7 +666,7 @@
                     <i class="material-icons prefix">comment</i>
                     <textarea
                       id="Comment"
-                      maxlength="250"
+                      maxlength="210"
                       name="comment"
                       class="materialize-textarea"
                     ></textarea>
