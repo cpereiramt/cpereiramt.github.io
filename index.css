@@ -127,6 +127,15 @@ nav.nav-center ul li a {
  display: none;
 }
 
+
+#about-mobile-section {
+  padding-top: 25px;
+}
+
+#projects-mobile-screen-section {
+  padding-top: 10px;
+}
+
 @media screen and (max-width: 285px) {
   .nav-wrapper li a {
     font-size: 10px;
@@ -193,6 +202,7 @@ nav.nav-center ul li a {
   }
   
   #contact-section {
+  padding-top: 40px;
   margin-bottom: 60px;
   }
 
@@ -215,6 +225,7 @@ nav.nav-center ul li a {
 
 #projects-medium-large-screen-section {
   display: block;
+  padding-top: 40px;
   margin-bottom: -200px;
 }
 
@@ -228,6 +239,7 @@ nav.nav-center ul li a {
 
 #about-medium-large-screen-section {
   display: block;
+  padding-top: 40px;
   
   }
 
