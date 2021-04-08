@@ -17,10 +17,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-
     <title>Clayton Pereira</title>
   </head>
   <body>
+    
     <section id="header-section">
       <header>
         <img
@@ -90,6 +90,7 @@
         </div>
       </header>
     </section>
+
     <section id="menu-mobile-section">
       <nav class="black nav-center">
         <div class="nav-wrapper container">
@@ -101,6 +102,7 @@
         </div>
       </nav>
     </section>
+
     <section id="menu-medium-large-screen-section">
       <nav class="black nav-center">
         <div class="nav-wrapper container">
@@ -112,6 +114,7 @@
         </div>
       </nav>
     </section>
+
     <section id="about-mobile-section">
       <h3 class="center teal-text">ABOUT</h3>
       <div class="about-row">
@@ -154,7 +157,7 @@
             <img class="about-image" src="images/fast.svg" alt="" srcset="" />
             <h5 class="center">Fast</h5>
             <p class="center">
-              newest technologies, that bring performance to another level using
+              Newest technologies, that bring performance to another level using
               jamstack.
             </p>
           </div>
@@ -207,11 +210,12 @@
           <div class="about-details-card">
             <img class="about-image" src="images/NodeJS.jpg" alt="" srcset="" />
             <h5 class="center">NodeJS</h5>
-            <p class="center">easy Scalability and maintenance of code .</p>
+            <p class="center">Easy Scalability and maintenance of code .</p>
           </div>
         </div>
       </div>
     </section>
+
     <section id="about-medium-large-screen-section">
       <h3 class="center teal-text">ABOUT</h3>
             <div class="card hoverable about-profile-card center">
@@ -254,7 +258,7 @@
               <img class="about-image" src="images/fast.svg" alt="" srcset="" />
               <h5 class="center">Fast</h5>
               <p class="center">
-                newest technologies, that bring performance to another level using
+                Newest technologies, that bring performance to another level using
                 jamstack.
               </p>
             </div>
@@ -326,154 +330,57 @@
             <div class="about-details-card">
               <img class="about-image" src="images/NodeJS.jpg" alt="" srcset="" />
               <h5 class="center">NodeJS</h5>
-              <p class="center">easy Scalability and maintenance of code .</p>
+              <p class="center">Easy Scalability and maintenance of code .</p>
             </div>          
 
           </div>         
          
-      </div>
-    </section>
-    <section id="projects-medium-large-screen-section">
-      <h1 class="center teal-text">Projects</h1>
-      <div class="carousel">
-        <div class="carousel-item">
-          <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img
-                class="activator"
-                src="images/projects/Vigilante_Page_img.png"
-              />
-            </div>
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-6"
-                >Vigilante 8 2 Page tribute<i class="material-icons right"
-                  >more</i
-                ></span
-              >
-              <p>
-                <a
-                  href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                  target="blank"
-                  >Live Project Demo</a
-                >
-              </p>
-            </div>
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4"
-                >Project Overview<i class="material-icons right">close</i></span
-              >
-              <p>
-                Vigilante 8: 2nd Offense is a vehicular combat game developed by
-                Luxoflux and published by Activision, it was first released in
-                1999
-              </p>
-            </div>
-          </div>
+        </div>
+      </section>
+
+      <section id="projects-medium-large-screen-section">
+        <h1 class="center teal-text">Projects</h1>
+        <h4 class="center-align">Filter By : </h4>
+        <div class="row ">
+          <div class="col s3  input-field offset-s2">
+            <select >
+              <option value="" disabled selected>Choose your option</option>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+            <option value="Full-stack">Full-stack</option>
+            <option value="Mobile">Mobile</option>      
+          </select>          
+          <label>Project Type</label>
         </div>
 
-        <div class="carousel-item">
-         <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img
-               class="activator"
-               src="images/projects/Vigilante_Page_img.png"
-             />
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-6"
-               >Vigilante 8 2 Page tribute<i class="material-icons right"
-                 >more</i
-               ></span
-             >
-             <p>
-               <a
-                 href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                 target="blank"
-                 >Live Project Demo</a
-               >
-             </p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4"
-               >Project Overview<i class="material-icons right">close</i></span
-             >
-             <p>
-               Vigilante 8: 2nd Offense is a vehicular combat game developed by
-               Luxoflux and published by Activision, it was first released in
-               1999
-             </p>
-           </div>
-         </div>
+        <div class="col s3 input-field">
+          <select multiple>
+            <option value="" disabled selected>Choose your option</option>
+            <optgroup label="Database">
+              <option value="MongoDB">MongoDB</option>
+            </optgroup>
+            <optgroup label="Framework Back-end">
+              <option value="SpringBoot">Spring Boot</option>
+              <option value="ExpressJS">ExpressJS</option>
+              <option value="NodeJS">NodeJS</option>
+            </optgroup>
+            <optgroup label="Framework Front-end">
+              <option value="ReactJS">ReactJS</option>
+            </optgroup>
+            <optgroup label="Front-end">
+              <option value="JAVASCRIPT VANILLA">HTML, CSS, JAVASCRIPT</option>
+            </optgroup>
+          </select>
+          <label>technologies used</label>
+        </div>
+        <button  class="btn-large white-text col s1" style="margin-right: 5px;"> Filter </button>
+        <button  class="btn-large white-text col s2 left"> See all
+          &nbsp;
+          <i class="Large material-icons prefix">insert_link</i>
+        </button>
        </div>
-
-       <div class="carousel-item">
-         <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img
-               class="activator"
-               src="images/projects/Vigilante_Page_img.png"
-             />
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-6"
-               >Vigilante 8 2 Page tribute<i class="material-icons right"
-                 >more</i
-               ></span
-             >
-             <p>
-               <a
-                 href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                 target="blank"
-                 >Live Project Demo</a
-               >
-             </p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4"
-               >Project Overview<i class="material-icons right">close</i></span
-             >
-             <p>
-               Vigilante 8: 2nd Offense is a vehicular combat game developed by
-               Luxoflux and published by Activision, it was first released in
-               1999
-             </p>
-           </div>
-         </div>
-       </div>
-       <div class="carousel-item">
-         <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img
-               class="activator"
-               src="images/projects/Vigilante_Page_img.png"
-             />
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-6"
-               >Vigilante 8 2 Page tribute<i class="material-icons right"
-                 >more</i
-               ></span
-             >
-             <p>
-               <a
-                 href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                 target="blank"
-                 >Live Project Demo</a
-               >
-             </p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4"
-               >Project Overview<i class="material-icons right">close</i></span
-             >
-             <p>
-               Vigilante 8: 2nd Offense is a vehicular combat game developed by
-               Luxoflux and published by Activision, it was first released in
-               1999
-             </p>
-           </div>
-         </div>
-       </div>
+     
+      <div class="carousel">     
 
        <div class="carousel-item">
          <div class="card">
@@ -510,77 +417,10 @@
          </div>
        </div>
 
-       <div class="carousel-item">
-         <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img
-               class="activator"
-               src="images/projects/Vigilante_Page_img.png"
-             />
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-6"
-               >Vigilante 8 2 Page tribute<i class="material-icons right"
-                 >more</i
-               ></span
-             >
-             <p>
-               <a
-                 href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                 target="blank"
-                 >Live Project Demo</a
-               >
-             </p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4"
-               >Project Overview<i class="material-icons right">close</i></span
-             >
-             <p>
-               Vigilante 8: 2nd Offense is a vehicular combat game developed by
-               Luxoflux and published by Activision, it was first released in
-               1999
-             </p>
-           </div>
-         </div>
-       </div>
-
-       <div class="carousel-item">
-         <div class="card">
-           <div class="card-image waves-effect waves-block waves-light">
-             <img
-               class="activator"
-               src="images/projects/Vigilante_Page_img.png"
-             />
-           </div>
-           <div class="card-content">
-             <span class="card-title activator grey-text text-darken-6"
-               >Vigilante 8 2 Page tribute<i class="material-icons right"
-                 >more</i
-               ></span
-             >
-             <p>
-               <a
-                 href="https://claytonpereira.com/Proj_bloco3_vigilante_page/"
-                 target="blank"
-                 >Live Project Demo</a
-               >
-             </p>
-           </div>
-           <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4"
-               >Project Overview<i class="material-icons right">close</i></span
-             >
-             <p>
-               Vigilante 8: 2nd Offense is a vehicular combat game developed by
-               Luxoflux and published by Activision, it was first released in
-               1999
-             </p>
-           </div>
-         </div>
-       </div>
-      </div>
+     
+      </div>      
     </section>
+
     <section id="projects-mobile-screen-section">
       <div class="row">
         <h1 class="center teal-text">Projects</h1>
@@ -621,6 +461,7 @@
         </div>
       </div>
     </section>
+
     <section id="contact-section">
       <h3 class="center teal-text">CONTACT</h3>
       <div class="container">
@@ -696,6 +537,7 @@
         </div>
       </div>
     </section>
+
     <section id="footer">
       <footer>
         <br />
@@ -705,7 +547,7 @@
       </footer>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <script src="carousel.js"></script>
+      <script src="initialization.js"></script>
       <script data-cfasync="false" src="form-submission-handler.js"></script>
     </section>
   </body>
