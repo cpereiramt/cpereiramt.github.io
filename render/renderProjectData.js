@@ -4,7 +4,7 @@ let carouselProjectsItem = document.createElement('div');
 carouselProjectsItem.setAttribute('class','carousel-item');
 
 function TemplateCarouselItemProject(JsonProjectData) {
-let carouselItemTemplate
+let carouselItemTemplate;
 JsonProjectData.forEach(element => {
 carouselItemTemplate = `
          <div class="card">
@@ -38,7 +38,8 @@ carouselItemTemplate = `
            </div>
       </div>     
 `;
-carouselProjectsItem.innerHTML = carouselItemTemplate;
-carouselProjects.appendChild(carouselProjectsItem);
+carouselProjectsItem.innerHTML += carouselItemTemplate;
+
 });
+carouselProjects.append(carouselProjectsItem);
 }
