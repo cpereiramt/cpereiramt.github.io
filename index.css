@@ -17,8 +17,8 @@
   /* image that will be stretch and centered*/
   display:block; /*remove inline-block spaces*/
   width:240%; /*make image stretch*/
-  height: 172vw;
-  margin:-22% -70%;
+  height: 178vw;
+  margin:-25% -70%;
 }
 
 #header-card {
@@ -51,12 +51,17 @@
 
 @media (min-width: 480px) {
    
+  #header-card {
+    top: 52vw;
+  }
   #header-img {
     /* image that will be stretch and centered*/
     display:block; /*remove inline-block spaces*/
-    width:260%; /*make image stretch*/
-    margin:-8.875% -79%;
+    width:220%; /*make image stretch*/
+    height: 150vw;
+    margin:-15.875% -60%;
   }
+
   #header-card h3 {
     font-size: 10vw;
   }
@@ -72,7 +77,7 @@
 }
   @media (min-width: 768px) {
     #header-card {
-      top: 73vw;
+      top: 35vw;
     }
     #header-card h3 {
       font-size: 7vw;
@@ -81,8 +86,7 @@
     #header-card h6 {
       font-size: 4vw;
     }
-    
-    
+       
     #header-card p {
       font-size: 2vw;
     }
@@ -90,8 +94,9 @@
     #header-img {
       /* image that will be stretch and centered*/
       display:block; /*remove inline-block spaces*/
-      width:200%; /*make image stretch*/
-      margin:14% -49%;
+      width:148%; /*make image stretch*/
+      height: 110vw;
+      margin:-14% -24%;
     }
     .header-icon {
       width: 40px;
@@ -100,62 +105,65 @@
   }
     @media (min-width: 1024px) {
       #header-card {
-        top: 75vw;
+        top: 23vw;
       }
       #header-card h3 {
-        font-size: 7vw;
+        font-size: 6vw;
       }
       
       #header-card h6 {
-        font-size: 4vw;
+        font-size: 3vw;
       }
       
       
       #header-card p {
-        font-size: 2vw;
+        font-size: 1.5vw;
       }
   
       #header-img {
         /* image that will be stretch and centered*/
         display:block; /*remove inline-block spaces*/
-        width:170%; /*make image stretch*/
-        margin:23% -35%;
+        width:140%; /*make image stretch*/
+        height: 100vw;
+        margin:-23% -20%;
       }
       .header-icon {
-        width: 50px;
+        width: 40px;
         margin-right: 25px;
       }
     }
       @media (min-width: 1044px) {
         #header-card {
-          top: 70vw;
+          top: 23vw;
         }
         #header-card h3 {
-          font-size: 5vw;
+          font-size: 6vw;
         }
         
         #header-card h6 {
-          font-size: 3.5vw;
+          font-size: 3vw;
         }
         
         
         #header-card p {
           font-size: 1.5vw;
         }
+    
         #header-img {
           /* image that will be stretch and centered*/
           display:block; /*remove inline-block spaces*/
-          width:150%; /*make image stretch*/
-          margin:25% -25%;
+          width:140%; /*make image stretch*/
+          height: 100vw;
+          margin:-23% -20%;
         }
         .header-icon {
-          width: 60px;
+          width: 40px;
           margin-right: 25px;
         }
       }
         @media (min-width: 2560px) {
           #header-card {
-            top: 70vw;
+            top: 24vw;
           }
           #header-card h3 {
             font-size: 5vw;
@@ -172,8 +180,9 @@
           #header-img {
             /* image that will be stretch and centered*/
             display:block; /*remove inline-block spaces*/
-            width:130%; /*make image stretch*/
-            margin:30% -14%;
+            width:105%; /*make image stretch*/
+            height: 74vw;
+            margin:-10% -3%;
           }
 
           .header-icon {
