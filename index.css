@@ -16,9 +16,9 @@
 #header-img {
   /* image that will be stretch and centered*/
   display:block; /*remove inline-block spaces*/
-  width:280%; /*make image stretch*/
-  height: 188vw;
-  margin:-11.875% -89%;
+  width:240%; /*make image stretch*/
+  height: 172vw;
+  margin:-22% -70%;
 }
 
 #header-card {
@@ -29,7 +29,7 @@
   white-space: nowrap;
   overflow: hidden;
   left: 50%;
-  top: 72vw;
+  top: 55vw;
 }
 
 #header-card h3 {
@@ -55,7 +55,6 @@
     /* image that will be stretch and centered*/
     display:block; /*remove inline-block spaces*/
     width:260%; /*make image stretch*/
-    height: 180vw;
     margin:-8.875% -79%;
   }
   #header-card h3 {
@@ -92,7 +91,6 @@
       /* image that will be stretch and centered*/
       display:block; /*remove inline-block spaces*/
       width:200%; /*make image stretch*/
-      height: 135vw;
       margin:14% -49%;
     }
     .header-icon {
@@ -121,7 +119,6 @@
         /* image that will be stretch and centered*/
         display:block; /*remove inline-block spaces*/
         width:170%; /*make image stretch*/
-        height: 120vw;
         margin:23% -35%;
       }
       .header-icon {
@@ -149,7 +146,6 @@
           /* image that will be stretch and centered*/
           display:block; /*remove inline-block spaces*/
           width:150%; /*make image stretch*/
-          height: 100vw;
           margin:25% -25%;
         }
         .header-icon {
@@ -177,7 +173,6 @@
             /* image that will be stretch and centered*/
             display:block; /*remove inline-block spaces*/
             width:130%; /*make image stretch*/
-            height: 90vw;
             margin:30% -14%;
           }
 
