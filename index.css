@@ -82,7 +82,10 @@
     .main-navigation.active .overlay {
       visibility: visible;
     }
-
+  
+    .form-select {
+      background: rgba(0, 0, 0, 0.8); }
+    
     @media (min-width: 480px) {
         #header-card {
             top: 52vw;
