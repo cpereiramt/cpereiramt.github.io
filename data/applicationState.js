@@ -1,11 +1,14 @@
 import * as projectType from "/utils/projectsTypes.js";
 import * as technologiesTypes from "/utils/technologiesTypes.js";
+import * as applicationPoint from "/utils/applicationPoint.js";
 const state = {
   projects: [],
   projectsType: [],
   technologiesUsed: [],
+  view: applicationPoint.NOT_STARTED, // application actual point
 };
 
+// Add project info Here
 state.projects = [
   {
     projectID: 1,
