@@ -5,7 +5,7 @@ const state = {
   projects: [],
   projectsType: [],
   technologiesUsed: [],
-  typeOfProjectSelected: "default",
+  typeOfProjectSelected: "DEFAULT",
   view: applicationPoint.NOT_STARTED, // application actual point
 };
 
@@ -20,13 +20,17 @@ const uniqueProjectTypes = new Set(
 state.projectsType = [...uniqueProjectTypes];
 
 /* Mutating technologiesUsed from state */
-const uniqueTechnologiesUsedSet = new Set();
+export const mutateTecnologiesUsed = (stateParams) => {
+  const uniqueTechnologiesUsedSet = new Set();
+  stateParams.projects.map((item) =>
+    item.projectTechnologiesUsed.map((subItem) =>
+      uniqueTechnologiesUsedSet.add(subItem)
+    )
+  );
 
-state.projects.map((item) =>
-  item.projectTechnologiesUsed.map((subItem) =>
-    uniqueTechnologiesUsedSet.add(subItem)
-  )
-);
-state.technologiesUsed = [...uniqueTechnologiesUsedSet];
+  state.technologiesUsed = [...uniqueTechnologiesUsedSet];
+};
+
+mutateTecnologiesUsed(state);
 
 export default state;
