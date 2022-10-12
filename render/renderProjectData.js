@@ -1,7 +1,19 @@
 export { TemplateCarouselItemProject };
-let containerProjects = document.querySelector(".card-container");
+
+const clearCardProjects = (cardContainer) => {
+  const options = cardContainer.getElementsByClassName("col");
+ 
+  for (var i = options.length; i--; ) {
+    cardContainer.removeChild(options[i]);
+  }
+   console.log(options);
+};
+
 function TemplateCarouselItemProject(JsonProjectData) {
+  let containerProjects = document.querySelector(".card-container");
   let carouselItemTemplate;
+
+  clearCardProjects(containerProjects);
   JsonProjectData.forEach((element) => {
     carouselItemTemplate = `
   <div class="col">
