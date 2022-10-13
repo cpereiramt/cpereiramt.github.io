@@ -2,11 +2,9 @@ export { TemplateCarouselItemProject };
 
 const clearCardProjects = (cardContainer) => {
   const options = cardContainer.getElementsByClassName("col");
- 
   for (var i = options.length; i--; ) {
     cardContainer.removeChild(options[i]);
   }
-   console.log(options);
 };
 
 function TemplateCarouselItemProject(JsonProjectData) {
