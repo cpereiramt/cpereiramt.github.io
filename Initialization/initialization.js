@@ -1,15 +1,14 @@
-import { loadJSON as InitJSONToObject } from './InitJSONToObject.js';
-import {TemplateCarouselItemProject} from '/render/renderProjectData.js';
+import { TemplateCarouselItemProject } from "/render/renderProjectData.js";
+import { fillTypeOfProjectSelect } from "/render/renderTypeOfProjectSelect.js";
+import { fillTechnologiesSelect } from "/render/renderTechnologiesSelect.js";
+import { onClickFilterButtonEvent } from "/events/projectListOnfilterButtonClicked.js";
+import state from "/data/applicationState.js";
 
+function initProjectData() {
+  TemplateCarouselItemProject(state.projects);
+  fillTypeOfProjectSelect();
+  fillTechnologiesSelect();
+  onClickFilterButtonEvent();
+}
 
-
-  function initProjectData() {
-    InitJSONToObject(function(response) {
-     // Parse JSON string into object
-       var actual_JSON = JSON.parse(response);
-       // console.log(actual_JSON);
-       TemplateCarouselItemProject(actual_JSON);
-    });
-   }
-
-   initProjectData();       
+initProjectData();

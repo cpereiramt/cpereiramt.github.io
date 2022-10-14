@@ -1,159 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Clayton Pereira</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="selectDropdownStyle.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/selectDropdownStyle.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="Initialization/swiped-events.min.js"></script>
+    <script defer src="Initialization/initNavBarMobile.js"></script>
 
+    <script defer src="Initialization/jquery.min.js"></script>
+    <script defer src="Initialization/popper.js"></script>
+    <script defer src="Initialization/popper.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"
+    ></script>
+    <script defer src="Initialization/main.js"></script>
     <script type="module" src="Initialization/initialization.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <section id="header-section">
-        <header>
-            <!-- Background image -->
-            <div id="img-container">
-                <img src="images/notebook.jpg" id="header-img" />
+      <header>
+        <!-- Background image -->
+        <div id="img-container">
+          <img src="images/notebook.jpg" id="header-img" />
+        </div>
+        <div id="header-card">
+          <div
+            class="d-flex justify-content-center align-items-center h-100 text-center align-middle"
+          >
+            <div class="text-white">
+              <h3 class="">Clayton Pereira</h3>
+              <h6 class="">Fullstack Developer</h6>
+              <p class="">
+                HTML5 | CSS3 | JavaScript | ReactJS |
+                <br />
+                NextJS | NodeJS | ExpressJS | MongoDB |
+              </p>
+              <p class="">Making your ideas come true</p>
+              <a href="https://github.com/cpereiramt"
+                ><img class="header-icon" src="images/github-11-xxl.png" alt=""
+              /></a>
+              <a href="https://www.linkedin.com/in/clayton-pereira-96071797/"
+                ><img
+                  class="header-icon"
+                  src="images/linkedin-6-xxl.png"
+                  alt=""
+              /></a>
             </div>
-            <div id="header-card">
-                <div class="d-flex justify-content-center align-items-center h-100 text-center align-middle">
-                    <div class="text-white">
-                        <h3 class="">Clayton Pereira</h3>
-                        <h6 class="">Fullstack Developer</h6>
-                        <p class="">
-                            HTML5 | CSS3 | JavaScript | ReactJS |
-                            <br /> NextJS | NodeJS | ExpressJS | MongoDB |
-                        </p>
-                        <p class="">Making your ideas come true</p>
-                        <a href="https://github.com/cpereiramt"><img class="header-icon" src="images/github-11-xxl.png" alt="" /></a>
-                        <a href="https://www.linkedin.com/in/clayton-pereira-96071797/"><img class="header-icon" src="images/linkedin-6-xxl.png" alt="" /></a>
-                    </div>
-                </div>
-            </div>
+          </div>
+        </div>
 
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top main-navigation">
-                <!-- Navbar content -->
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"> &nbsp;&nbsp;CP</a>
-                    <button class="navbar-toggler" type="button">
-                          <span class="navbar-toggler-icon"></span>
-                   </button>
-                    <!-- overlay -->
-                    <div class="overlay d-flex d-lg-none"></div>
-                    <!-- overlay -->
-                    <!--  Collapse -->
-                    <div class="order-lg-2 bg-dark d-lg-flex w-100 pb3 pb-lg-0 sidebar justify-content-center align-items-center" id="navbarText">
-                        <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link px-3 px-lg-2" href="">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link px-3 px-lg-2" href="">Projects</a
+        <!-- Navbar -->
+        <nav
+          class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top main-navigation"
+        >
+          <!-- Navbar content -->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"> &nbsp;&nbsp;CP</a>
+            <button class="navbar-toggler" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- overlay -->
+            <div class="overlay d-flex d-lg-none"></div>
+            <!-- overlay -->
+            <!--  Collapse -->
+            <div
+              class="order-lg-2 bg-dark d-lg-flex w-100 pb3 pb-lg-0 sidebar justify-content-center align-items-center"
+              id="navbarText"
+            >
+              <ul class="navbar-nav mr-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link px-3 px-lg-2" href="#header-section"
+                    >About</a
                   >
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link px-3 px-lg-2" href="#project-section"
+                    >Projects</a
+                  >
+                </li>
+                <!--  <li class="nav-item">
                   <a class="nav-link px-3 px-lg-2" href="">Contact Me</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!--  Collapse -->
-                </div>
-            </nav>
-            <!-- Navbar -->
-        </header>
-    </section>
-
-    <section id="about-section">
-
-        
-
-    </section>
-    <section id="project-section" class="bg-light">
-    
-        <div class="container">
-            <h1 class="text-center pt-3 pb-2 text-primary">Projects</h1>
-            <h4 class="text-center pb-3 pb-3">Filter By :</h4>
-            <!-- Dropdown -->
-            <div class="row d-flex justify-content-between align-items-center flex-column flex-md-row">
-                <div class="col-6">
-                    <label for="exampleInputEmail1" class="form-label" id="exampleInputEmail1">Type of project</label>
-                    <select class="form-select form-select-lg form-select-dark">
-						<option value="O1" data-badge="">Option1</option>
-						<option value="O2" data-badge="">Option2</option>
-						<option value="O3" data-badge="">Option3</option>
-						<option value="O4" data-badge="">Option4</option>
-						<option value="O5" data-badge="">Option5</option>
-						<option value="O6" data-badge="">Option6</option>
-						<option value="O7" data-badge="">Option7</option>
-					</select>
-                </div>
-                <!-- Dropdown -->
-
-                <!-- Dropdown -->
-                <div class="col-6">
-                    <label for="exampleInputEmai2" class="form-label" id="exampleInputEmail1">Technologies Used</label>
-
-                    <select class="js-select2" multiple="multiple">
-						<option value="O1" data-badge="">Option1</option>
-						<option value="O2" data-badge="">Option2</option>
-						<option value="O3" data-badge="">Option3</option>
-						<option value="O4" data-badge="">Option4</option>
-						<option value="O5" data-badge="">Option5</option>
-						<option value="O6" data-badge="">Option6</option>
-						<option value="O7" data-badge="">Option7</option>
-					</select>
-                </div>
+                </li> -->
+              </ul>
             </div>
-
-            <div class="row d-flex justify-content-center align-items-center flex-md-row pt-1">
-                <div class="row pt-1">
-                    <button class="btn btn-primary btn-lg pt-1">Filter</button>
-                </div>
-                <div class="row pt-2">
-                    <button class="btn btn-primary btn-lg pt-1 mb-3">See all</button>
-                </div>
-
-            </div>
-        </div>
-   
-
-        <div class="album py-5 bg-light">
-            <div class="container">
-        
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 card-container">
-              </div>
-            </div>
+            <!--  Collapse -->
           </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        </nav>
+        <!-- Navbar -->
+      </header>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-    <script src="Initialization/swiped-events.min.js"></script>
-    <script src="Initialization/initNavBarMobile.js"></script>
 
-    <script src="Initialization/jquery.min.js"></script>
-    <script src="Initialization/popper.js"></script>
-    <script src="Initialization/popper.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
-    <script src="Initialization/main.js"></script>
-</body>
+    <section id="project-section" class="bg-light">
+      <div class="container">
+        <h1 class="text-center pt-3 pb-2 text-primary">Projects</h1>
+        <h4 class="text-center pb-3 pb-3">Filter By :</h4>
+        <!-- Dropdown -->
+        <div
+          class="row d-flex justify-content-between align-items-center flex-column flex-md-row"
+        >
+          <div class="col-6">
+            <label
+              for="exampleInputEmail1"
+              class="form-label"
+              id="exampleInputEmail1"
+              >Type of project</label
+            >
+            <select
+              class="form-select form-select-lg form-select"
+              id="project-type-select"
+            ></select>
+          </div>
+          <!-- Dropdown -->
 
+          <!-- Dropdown -->
+          <div class="col-6">
+            <label for="exampleInputEmai2" class="form-label"
+              >Technologies Used</label
+            >
+
+            <select
+              class="js-select2"
+              id="multiple-select"
+              multiple="multiple"
+            ></select>
+          </div>
+        </div>
+
+        <div
+          class="row d-flex justify-content-center align-items-center flex-md-row pt-1"
+        >
+          <div class="row pt-1">
+            <button class="btn btn-primary btn-lg pt-1" id="filterButton">Filter</button>
+          </div>
+          <div class="row pt-2">
+            <button class="btn btn-primary btn-lg pt-1 mb-3">See all</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 card-container"
+          ></div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+  </body>
 </html>
