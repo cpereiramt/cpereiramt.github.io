@@ -13,7 +13,7 @@ const projectData = [
     projectTechnologiesUsed: [technologiesTypes.MONGO_DB],
   },
   {
-    projectID: 1,
+    projectID: 2,
     projectTitle: "Vigilante 8 2 Page tribute",
     projectURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
     projectOverview:
@@ -27,7 +27,7 @@ const projectData = [
     ],
   },
   {
-    projectID: 1,
+    projectID: 3,
     projectTitle: "Vigilante 8 2 Page tribute",
     projectURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
     projectOverview:
@@ -37,7 +37,7 @@ const projectData = [
     projectTechnologiesUsed: [technologiesTypes.HTML, technologiesTypes.CSS],
   },
   {
-    projectID: 1,
+    projectID: 4,
     projectTitle: "Vigilante 8 2 Page tribute",
     projectURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
     projectOverview:

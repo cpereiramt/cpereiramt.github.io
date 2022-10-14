@@ -22,13 +22,34 @@ const onClickFilterButtonEvent = () => {
       state.projects = projectData;
       return TemplateCarouselItemProject(state.projects);
     }
-
-    // continuar daqui para tentar filtrar por tipo de projeto e tipo de tecnologia .
-    const filtered = projectData.filter(
+    // First filter only with Type of Project
+    let filtered = projectData.filter(
       (project) => project.projectType === state.typeOfProjectSelected
     );
     const filteredArrayWithProjectType =
       filterByTechnologies(selectedTecnologies);
+
+    // If any technology is selected then filter per array of Technologies
+    if (filteredArrayWithProjectType.length > 0) {
+      filtered = filtered.map((projects) => {
+        const result = projects.projectTechnologiesUsed.filter((tech) =>
+          filteredArrayWithProjectType.includes(tech)
+        );
+        return result.map((boolean) => {
+          if (boolean) {
+            return projects;
+          }
+          if (!boolean) {
+            return null;
+          }
+          return;
+        });
+      });
+      // Filter the unique projects results; 
+      const uniqueTechnologiesResults = new Set(filtered.flat());
+      TemplateCarouselItemProject([...uniqueTechnologiesResults]);
+      return;
+    }
 
     TemplateCarouselItemProject(state.projects);
   });
