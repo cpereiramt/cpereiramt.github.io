@@ -6,6 +6,7 @@ const state = {
   projectsType: [],
   technologiesUsed: [],
   typeOfProjectSelected: "DEFAULT",
+  projectsListCurrentPage: 1,
   view: applicationPoint.NOT_STARTED, // application actual point
 };
 

@@ -1,3 +1,4 @@
+export {paginate}
 const paginate = (projects, page = 1, perPage = 6) => {
     const offset = perPage * (page - 1);
     const totalPages = Math.ceil(projects.length / perPage);
