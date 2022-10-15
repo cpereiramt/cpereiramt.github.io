@@ -9,6 +9,9 @@ const clearSelectOptions = (selectElement) => {
 };
 const fillTechnologiesSelect = () => {
   const select = document.getElementById("multiple-select");
+  if (state.typeOfProjectSelected === 'DEFAULT') {
+   select.disabled = true;  
+  }
   clearSelectOptions(select);
   const { technologiesUsed } = state;
   technologiesUsed.map((item) => {

@@ -5,6 +5,8 @@ import { onClickFilterButtonEvent } from "/events/projectListOnfilterButtonClick
 import state from "/data/applicationState.js";
 
 function initProjectData() {
+  const buttonFilter = document.getElementById("filterButton");
+  buttonFilter.disabled = true;
   TemplateCarouselItemProject(state.projects);
   fillTypeOfProjectSelect();
   fillTechnologiesSelect();
