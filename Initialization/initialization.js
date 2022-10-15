@@ -2,6 +2,7 @@ import { TemplateCarouselItemProject } from "/render/renderProjectData.js";
 import { fillTypeOfProjectSelect } from "/render/renderTypeOfProjectSelect.js";
 import { fillTechnologiesSelect } from "/render/renderTechnologiesSelect.js";
 import { onClickFilterButtonEvent } from "/events/projectListOnfilterButtonClicked.js";
+import {templateNavigation} from '/render/renderPagination.js'
 import state from "/data/applicationState.js";
 
 function initProjectData() {
@@ -11,6 +12,7 @@ function initProjectData() {
   fillTypeOfProjectSelect();
   fillTechnologiesSelect();
   onClickFilterButtonEvent();
+  templateNavigation();
 }
 
 initProjectData();
