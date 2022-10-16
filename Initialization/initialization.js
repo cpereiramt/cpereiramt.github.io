@@ -4,6 +4,7 @@ import { fillTechnologiesSelect } from "/render/renderTechnologiesSelect.js";
 import { onClickFilterButtonEvent } from "/events/projectListOnfilterButtonClicked.js";
 import {buttonSeeAllClicked} from "/events/seeAllButtonClicked.js"
 import {templateNavigation} from '/render/renderPagination.js'
+import {handlePaginationClick} from '/events/navigationButtonClicked.js'
 import state from "/data/applicationState.js";
 
 function initProjectData() {
@@ -25,6 +26,7 @@ else {
   onClickFilterButtonEvent();
   templateNavigation();
   buttonSeeAllClicked();
+  handlePaginationClick();
 }
 
 initProjectData();

@@ -3,6 +3,7 @@ import {paginate} from "/utils/pagination.js"
 import state from "/data/applicationState.js"
 
 function templateNavigation() {
+  
   let containerNavigation = document.querySelector(".navigation-container");
  const paginationData = paginate(state.projects,2);  
  const {totalPages} = paginationData;
@@ -16,10 +17,10 @@ function templateNavigation() {
         <a class="page-link">Previous</a>
       </li>
       ${pages.map((_ , index) => {
-        return  `<li class="page-item ${state.projectsListCurrentPage === index +1 ? "active" : "disabled" }"><a class="page-link"  >${index + 1 }</a></li>`
+        return  `<li class="page-item ${state.projectsListCurrentPage === index +1 ? "active" : "disabled" }"><button class="page-link"  >${index + 1 }</button></li>`
        })}
       <li class="page-item">
-        <a class="page-link" href="">Next</a>
+        <a class="page-link">Next</a>
       </li>
     </ul>
   </nav>
