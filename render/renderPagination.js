@@ -1,10 +1,19 @@
 export { templateNavigation };
 import {paginate} from "/utils/pagination.js"
 import state from "/data/applicationState.js"
+import {handlePaginationClick} from '/events/navigationButtonClicked.js'
 
-function templateNavigation() {
-  
+
+const clearPagination = (paginationContainer) => {
+ 
+  paginationContainer.innerHTML="";
+
+};
+
+
+function templateNavigation() {  
   let containerNavigation = document.querySelector(".navigation-container");
+  clearPagination(containerNavigation)
  const paginationData = paginate(state.projects,2);  
  const {totalPages} = paginationData;
 
@@ -26,7 +35,7 @@ function templateNavigation() {
   </nav>
 `
 
-const sanitezedNavigationTemplate = navigationTemplate.split(",").join(" ");
+const sanitezedNavigationTemplate = navigationTemplate.split(",").join(" ")
 containerNavigation.innerHTML += sanitezedNavigationTemplate;
-
+handlePaginationClick()
 }
