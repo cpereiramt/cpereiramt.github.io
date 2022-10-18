@@ -205,9 +205,7 @@ const projectData = [
     projectFeaturedImage: "images/projects/Vigilante_Page_img.png",
     projectType: projectType.FRONT_END,
     projectTechnologiesUsed: [
-      technologiesTypes.JAVASCRIPT,
-      technologiesTypes.HTML,
-      technologiesTypes.CSS,
+    "NEXTJS"
     ],
   },
 ];

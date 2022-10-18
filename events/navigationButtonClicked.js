@@ -15,9 +15,9 @@ const handlePaginationClick = () => {
           state.projectsListCurrentPage = buttonNumber
           const buttonPrevious = document.getElementById("previousButton")
           const buttonNext = document.getElementById("nextButton")
-          const paginateObject = paginate(state.projects, state.projectsListCurrentPage);
-          templateNavigation();
-          TemplateCarouselItemProject(paginateObject.items)          
+          state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+          templateNavigation(state.paginate);
+          TemplateCarouselItemProject(state.paginate.items)          
         }
         else {
           const buttonPrevious = document.getElementById("previousButton")

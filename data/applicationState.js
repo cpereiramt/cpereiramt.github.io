@@ -7,6 +7,8 @@ const state = {
   technologiesUsed: [],
   typeOfProjectSelected: "DEFAULT",
   projectsListCurrentPage: 1,
+  filteredProjects: [],
+  paginate: {},
   view: applicationPoint.NOT_STARTED, // application actual point
 };
 
@@ -14,7 +16,6 @@ const state = {
 state.projects = projectData;
 
 /* Mutating projectsType from state */
-
 const uniqueProjectTypes = new Set(
   Array.from(state.projects, (item) => item.projectType)
 );

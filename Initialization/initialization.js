@@ -5,27 +5,21 @@ import { onClickFilterButtonEvent } from "/events/projectListOnfilterButtonClick
 import {templateNavigation} from '/render/renderPagination.js'
 import state from "/data/applicationState.js";
 import {paginate} from '/utils/pagination.js'
+import projectData from "/data/projectsData.js";
 
 function initProjectData() {
   const buttonFilter = document.getElementById("filterButton");
   const paginationNav = document.getElementsByClassName("navigation-container");
   const cardContainer = document.getElementsByClassName("card");
   buttonFilter.disabled = true;
-
-  TemplateCarouselItemProject(state.projects);
-  if(cardContainer.length > 6 ) {
+  state.filteredProjects = projectData
     paginationNav[0].style.visibility = "visible";
-    const paginateObject = paginate(state.projects, state.projectsListCurrentPage);
-    TemplateCarouselItemProject(paginateObject.items)
-
-}
-else {
-     paginationNav[0].style.visibility = "hidden";  
-}
+    state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+    TemplateCarouselItemProject(state.paginate.items)
   fillTypeOfProjectSelect();
   fillTechnologiesSelect();
   onClickFilterButtonEvent();
-  templateNavigation();
+  templateNavigation(state.paginate);
 }
 
 initProjectData();

@@ -11,25 +11,27 @@ const clearPagination = (paginationContainer) => {
 };
 
 
-function templateNavigation() {  
+function templateNavigation(paginationData = { previousPage: null,
+  nextPage: null,
+  total:1,
+  totalPages: 1,
+  items: 1}) {  
   let containerNavigation = document.querySelector(".navigation-container");
   clearPagination(containerNavigation)
-
- const paginationData = paginate(state.projects,state.projectsListCurrentPage);  
- const {totalPages} = paginationData;
+ const {totalPages, previousPage, nextPage} = paginationData;
 
  let pages = ".".repeat(totalPages);
  pages = pages.split("")
    const navigationTemplate = `
     <nav>
     <ul class="pagination pagination-lg">
-      <li class="page-item ${paginationData.previousPage === null ? 'disabled' : ''}" id="previousButton" >
+      <li class="page-item ${previousPage === null ? 'disabled' : ''}" id="previousButton" >
         <button class="page-link" >Previous</button>
       </li>
       ${pages.map((_ , index) => {
         return  `<li class="page-item ${state.projectsListCurrentPage === index +1 ? "active" : "disabled" }"><button class="page-link"  >${index + 1 }</button></li>`
        })}
-      <li class="page-item ${paginationData.nextPage === null ? 'disabled' : ''}" id="nextButton" >
+      <li class="page-item ${nextPage === null ? 'disabled' : ''}" id="nextButton" >
         <button class="page-link" >Next</button>
       </li>
     </ul>
