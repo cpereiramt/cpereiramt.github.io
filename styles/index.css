@@ -84,8 +84,15 @@
     }
   
     .form-select {
-      background: rgba(0, 0, 0, 0.8); }
+      background: rgba(0, 0, 0, 0.8); 
+    }
     
+    .pagination {
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     @media (min-width: 480px) {
         #header-card {
             top: 52vw;

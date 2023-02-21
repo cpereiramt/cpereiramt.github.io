@@ -2,6 +2,8 @@ export { onClickFilterButtonEvent };
 import state from "/data/applicationState.js";
 import projectData from "/data/projectsData.js";
 import { TemplateCarouselItemProject } from "/render/renderProjectData.js";
+import {paginate} from '/utils/pagination.js'
+import {templateNavigation} from '/render/renderPagination.js'
 
 const filterByTechnologies = (arrayOfTechnologies) => {
   const selectedTecnologies = [];
@@ -20,10 +22,11 @@ const onClickFilterButtonEvent = () => {
   buttonFilter.addEventListener("click", () => {
     if (state.typeOfProjectSelected === "DEFAULT") {
       state.projects = projectData;
-      return TemplateCarouselItemProject(state.projects);
+      return TemplateCarouselItemProject(state.filteredProjects);
     }
+   
     // First filter only with Type of Project
-    let filtered = projectData.filter(
+    state.filteredProjects = projectData.filter(
       (project) => project.projectType === state.typeOfProjectSelected
     );
     const filteredArrayWithProjectType =
@@ -31,7 +34,7 @@ const onClickFilterButtonEvent = () => {
 
     // If any technology is selected then filter per array of Technologies
     if (filteredArrayWithProjectType.length > 0) {
-      filtered = filtered.map((projects) => {
+     let filtered = state.filteredProjects.map((projects) => {
         const result = projects.projectTechnologiesUsed.filter((tech) =>
           filteredArrayWithProjectType.includes(tech)
         );
@@ -47,10 +50,16 @@ const onClickFilterButtonEvent = () => {
       });
       // Filter the unique projects results; 
       const uniqueTechnologiesResults = new Set(filtered.flat());
-      TemplateCarouselItemProject([...uniqueTechnologiesResults]);
+      state.filteredProjects = [...uniqueTechnologiesResults]
+      state.projectsListCurrentPage = 1
+      state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+      TemplateCarouselItemProject(state.paginate.items);
+      templateNavigation(state.paginate);
       return;
     }
-
-    TemplateCarouselItemProject(state.projects);
+    state.projectsListCurrentPage = 1
+    state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+    TemplateCarouselItemProject(state.paginate.items);
+    templateNavigation(state.paginate);
   });
 };
