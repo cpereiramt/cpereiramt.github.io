@@ -21,8 +21,13 @@ function TemplateCarouselItemProject(JsonProjectData) {
   src="${element.projectFeaturedImage}"
       />
   <div class="card-body">
-  <h3  class="card-tittle">${element.projectTitle}</h3>
+  <h3  class="fs-2">${element.projectTitle}</h3>
     <p class="card-text"> ${element.projectOverview} </p>
+    <p class="fs-3"> Project Type: </p>
+    <p class="fs-5 text-muted"> ${element.projectType} </p>
+    <p class="fs-3"> Technologies Used: </p>
+   <p class="fs-5 text-muted"> ${element.projectTechnologiesUsed} </p>
+    <br />
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
       <a class="btn btn-sm btn-outline-secondary"

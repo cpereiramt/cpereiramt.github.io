@@ -13,18 +13,27 @@ const handlePaginationClick = () => {
         const buttonNumber = parseInt(e.target.outerText,10)
         if (!isNaN(buttonNumber)) {
           state.projectsListCurrentPage = buttonNumber
-          const buttonPrevious = document.getElementById("previousButton")
-          const buttonNext = document.getElementById("nextButton")
           state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
           templateNavigation(state.paginate);
           TemplateCarouselItemProject(state.paginate.items)          
         }
-        else {
-          const buttonPrevious = document.getElementById("previousButton")
-          const buttonNext = document.getElementById("nextButton")
-          const paginateObject = paginate(state.projects, state.projectsListCurrentPage);         
-          templateNavigation();
+       // check if button is next or previous and if page is not first or last and change page number accordingly
+        if (e.target.outerText === 'Next') {
+          if (state.projectsListCurrentPage !== state.paginate.totalPages) {
+            state.projectsListCurrentPage += 1
+            state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+            templateNavigation(state.paginate);
+            TemplateCarouselItemProject(state.paginate.items)
           }
+        } 
+        if (e.target.outerText === 'Previous') {
+          if (state.projectsListCurrentPage !== 1) {
+            state.projectsListCurrentPage -= 1
+            state.paginate = paginate(state.filteredProjects, state.projectsListCurrentPage);
+            templateNavigation(state.paginate);
+            TemplateCarouselItemProject(state.paginate.items)
+          }
+        }       
        })
     })
   }
