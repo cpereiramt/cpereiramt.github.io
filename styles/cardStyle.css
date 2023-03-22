@@ -1,0 +1,11 @@
+.card-img-top {
+    min-height: 250px;
+  }
+
+  .card-body {
+    min-height: 500px;
+  }
+
+  .card-text {
+    min-height: 100px;
+  }

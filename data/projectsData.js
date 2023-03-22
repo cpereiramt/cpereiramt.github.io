@@ -14,8 +14,20 @@ const projectData = [
       technologiesTypes.JAVASCRIPT,
       technologiesTypes.HTML,
       technologiesTypes.CSS,],
+  },
+  {
+    projectID: 1,
+    projectTitle: "Hub da web Blog",
+    projectURL: "https://blog.hubdaweb.com.br",
+    projectOverview:
+      "Brazilian blog about web development, with articles about HTML, CSS, JavaScript, React, Vue, Node, and more.",
+    projectFeaturedImage: "images/projects/blog_hubdaweb_img.png",
+    projectType: projectType.FRONT_END,
+    projectTechnologiesUsed: [
+      technologiesTypes.NEXT_JS,
+    technologiesTypes.AWS_CLOUDFRONT,
+    technologiesTypes.AWS_S3,],
   }
-  
 ];
 
 export default projectData;
