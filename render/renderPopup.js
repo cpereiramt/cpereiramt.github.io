@@ -1,4 +1,4 @@
-function renderTemplatePopup() {
+function renderTemplatePopup(element) {
  let containerPopup = document.querySelector(".jw-modal");
  let popupTemplate =  `
  <div class="jw-modal-body">
@@ -20,8 +20,7 @@ function renderTemplatePopup() {
 </ul>
 </div>`;
   
-  containerPopup.innerHTML += popupTemplate ;
+  containerPopup.innerHTML = popupTemplate ;
 
   }
   
-  export { renderTemplatePopup };

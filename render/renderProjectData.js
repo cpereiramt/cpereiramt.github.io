@@ -30,8 +30,7 @@ function TemplateCarouselItemProject(JsonProjectData) {
     <br />
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
-      <button onclick="openModal('modal-1')" class="btn btn-sm btn-outline-secondary"
-       >More info</button>
+      <button onclick="openModal('modal-1', ${JSON.stringify(element).replace(/"/g, "'")})" class="btn btn-sm btn-outline-secondary">More info</button>    
       </div>
     </div>
    </div>

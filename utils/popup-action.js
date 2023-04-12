@@ -1,7 +1,9 @@
 // open modal by id
-function openModal(id) {
+
+function openModal(id, element) {
     document.getElementById(id).classList.add('open');
     document.body.classList.add('jw-modal-open');
+    renderTemplatePopup(element);
 }
 
 // close currently open modal
@@ -18,3 +20,4 @@ window.addEventListener('load', function() {
         }
     });
 });
+
