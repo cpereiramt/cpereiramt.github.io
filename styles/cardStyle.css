@@ -10,8 +10,15 @@
   }
 .card { 
   margin: 5px;
+  cursor: pointer;
 }
-  
+
+.card:hover {
+/* create a nice hover effect in 3d with rotation */
+  transform: rotate(0.8deg);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
 .card-title {
   background-color: rgba(13, 109, 253, 0.589);
   width: 100%;
