@@ -40,6 +40,13 @@
 
 }
 
+#close_button {
+  background: none;
+  border: none;
+  font-size: x-large;
+ 
+}
+
 
 
 body.jw-modal-open {

@@ -2,7 +2,7 @@ function renderTemplatePopup(element) {
  let containerPopup = document.querySelector(".jw-modal");
  let popupTemplate =  `
  <div class="jw-modal-body">
- <button  onclick="closeModal()">Close</button>
+ <button id="close_button"  onclick="closeModal()">X</button>
  <br />
  <br />
  <h3 class="text-center .fs-2 lh-lg">${element.projectTitle} - release notes </h3>
