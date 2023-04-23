@@ -17,10 +17,18 @@ const projectData = [
     versions: [
       {
         versionID: 1,
-        versionTitle: "V1",
+        versionTitle: "1.0.0",
         versionURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
         versionOverview: "First version of the project developed for the web design course at Trybe as a final project of block 3",
-        versionFeaturedImage: "images/projects/Vigilante_Page_img.png"}
+        versionFeaturedImage: "images/projects/Vigilante_Page_img.png"
+      },
+      {
+        versionID: 2,
+        versionTitle: "1.0.1",
+        versionURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
+        versionOverview: "minor release of project with some improvements in performance",
+        versionFeaturedImage: "images/projects/Vigilante_Page_img.png"
+      }
     ]
   },
   {
