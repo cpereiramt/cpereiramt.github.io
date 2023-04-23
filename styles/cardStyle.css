@@ -1,6 +1,8 @@
 .card-img-top {
-    min-height: 150px;
-  }
+    min-height: 230px;
+    min-width: 230px;
+    max-height: 200px;
+    }
 
   .card-body {
     padding: 10px;
@@ -10,3 +12,8 @@
   margin: 5px;
 }
   
+.card-title {
+  background-color: rgba(13, 109, 253, 0.589);
+  width: 100%;
+}
+

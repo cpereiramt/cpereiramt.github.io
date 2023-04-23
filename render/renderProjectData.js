@@ -21,7 +21,10 @@ function TemplateCarouselItemProject(JsonProjectData) {
   src="${element.projectFeaturedImage}"
       />
   <div class="card-img-overlay">
-  <h2 class="card-title">${element.projectTitle}</h2>
+
+  <div class="badge text-wrap card-title">
+ <p class="fs-3">${element.projectTitle}</p> 
+</div>
 
   </div>
   <div class="card-body">

@@ -8,7 +8,7 @@ const projectData = [
     projectURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
     projectShortDescription: "Vigilante 8 second game",
     projectCompleteDescription:" Vigilante 8: 2nd Offense is a vehicular combat game developed by Luxoflux and published by Activision, it was first released in 1999",
-    projectFeaturedImage: "https://placehold.co/600x400",
+    projectFeaturedImage: "images/projects/Vigilante_Page_img.png",
     projectType: projectType.FRONT_END,
     projectTechnologiesUsed: [
       technologiesTypes.JAVASCRIPT,
@@ -18,7 +18,7 @@ const projectData = [
       {
         versionID: 1,
         versionTitle: "1.0.0",
-        versionURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
+        versionURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/version-1.0/homePage.html",
         versionOverview: "First version of the project developed for the web design course at Trybe as a final project of block 3",
         versionFeaturedImage: "images/projects/Vigilante_Page_img.png",
         versionDate:'2022-04-01'
