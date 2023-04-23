@@ -16,9 +16,9 @@ function renderTemplatePopup(element) {
       <p class="flow-text">${data.versionOverview} </p>
   <h6>Technology used </h6>
   <p>${element.projectTechnologiesUsed}</p>
-  <a class="flow-text" href="version-1.0/homePage.html">Acess Site <i class="small material-icons">open_in_new</i> </a>
+  <a class="flow-text" href=${data.versionURL}>Acess Site <i class="small material-icons">open_in_new</i> </a>
   </div>        
-</li>`}).join('') : `<h4>No Version Found</h4>`}  
+</li>`}).join('') : ` <a class="flow-text" href=${element.projectURL}>Acess Site <i class="small material-icons">open_in_new</i> </a>`}  
 </ul>
 </div>`;
   
