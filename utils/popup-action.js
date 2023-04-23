@@ -1,9 +1,9 @@
-// open modal by id
 
+// open modal by id and set content do div with class jw-modal
 function openModal(id, element) {
-    document.getElementById(id).classList.add('open');
-    document.body.classList.add('jw-modal-open');
+    document.getElementById(id).classList.add('open');   
     renderTemplatePopup(element);
+    init_collapsible();
 }
 
 // close currently open modal
