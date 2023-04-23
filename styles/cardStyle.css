@@ -3,9 +3,10 @@
   }
 
   .card-body {
-    min-height: 500px;
+    padding: 10px;
+    min-height: 220px;
   }
-
-  .card-text {
-    min-height: 100px;
-  }
+.card { 
+  margin: 5px;
+}
+  

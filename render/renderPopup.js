@@ -2,9 +2,11 @@ function renderTemplatePopup(element) {
  let containerPopup = document.querySelector(".jw-modal");
  let popupTemplate =  `
  <div class="jw-modal-body">
- <button onclick="closeModal()">Close</button>
- <h4 class="col s12">${element.projectTitle} - release notes </h4>
- <p  class="flow-text">${element.projectCompleteDescription}</p>
+ <button  onclick="closeModal()">Close</button>
+ <br />
+ <br />
+ <h3 class="text-center .fs-2 lh-lg">${element.projectTitle} - release notes </h3>
+ <p  class="text-center flow-text">${element.projectCompleteDescription}</p>
  <ul class="collapsible">
  ${element.versions.length > 0 ? element.versions.map(data => {
  return `<li>
@@ -18,7 +20,6 @@ function renderTemplatePopup(element) {
   </div>        
 </li>`}).join('') : `<h4>No Version Found</h4>`}  
 </ul>
-
 </div>`;
   
   containerPopup.innerHTML = popupTemplate ;

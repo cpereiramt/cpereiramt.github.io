@@ -34,7 +34,7 @@
    
             box-sizing: border-box;
    
-    padding: 2rem;
+    padding: 1.5rem;
    
     background-color: #f0f0f0 ;
    
@@ -46,7 +46,7 @@
   }
 
   .container {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 
   .link {

@@ -24,12 +24,19 @@
 }
 
 .jw-modal-body {
-    padding: 20px;
+    /* media query to make modal body scrollable when viewport is narrow */
+    @media (max-width: 768px) {
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        width: 98vw;
+        height: 80vh;
+        padding: 10px;
+    }
     background: #fff;
     margin: 20% auto;
-    width: 60vw;
-    height: 50vh;
-    padding: 10px;
+    width: 77vw;
+    height: 70vh;
+    padding: 30px;
 
 }
 
