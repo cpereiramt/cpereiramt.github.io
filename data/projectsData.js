@@ -20,7 +20,8 @@ const projectData = [
         versionTitle: "1.0.0",
         versionURL: "https://claytonpereira.com/Proj_bloco3_vigilante_page/",
         versionOverview: "First version of the project developed for the web design course at Trybe as a final project of block 3",
-        versionFeaturedImage: "images/projects/Vigilante_Page_img.png"
+        versionFeaturedImage: "images/projects/Vigilante_Page_img.png",
+        versionDate:'2022-04-01'
       }
     ]
   },
