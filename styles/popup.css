@@ -1,0 +1,59 @@
+/* MODAL STYLES
+-------------------------------*/
+.jw-modal {
+    /* modals are hidden by default */
+    display: none;
+
+    /* modal container fixed across whole screen */
+    position: fixed;
+    inset: 0;
+
+    /* z-index must be higher than everything else on the page */
+    z-index: 10000;
+    
+    /* semi-transparent black background exposed by padding */
+    background-color: rgba(0, 0, 0, .75);
+ 
+
+    /* enables scrolling for tall modals */
+    overflow: auto;
+}
+
+.jw-modal.open {
+    display: block;
+}
+
+.jw-modal-body {
+    /* media query to make modal body scrollable when viewport is narrow */
+    @media (max-width: 768px) {
+        max-height: calc(100vh - 100px);
+        overflow-y: auto;
+        width: 98vw;
+        height: 80vh;
+        padding: 10px;
+    }
+    background: #fff;
+    margin: 20% auto;
+    width: 77vw;
+    height: 70vh;
+    padding: 30px;
+
+}
+
+#close_button {
+  background: none;
+  border: none;
+  font-size: x-large;
+ 
+}
+
+
+
+body.jw-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+  }

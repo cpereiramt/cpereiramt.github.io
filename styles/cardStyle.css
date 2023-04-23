@@ -1,11 +1,19 @@
 .card-img-top {
-    min-height: 250px;
-  }
+    min-height: 230px;
+    min-width: 230px;
+    max-height: 200px;
+    }
 
   .card-body {
-    min-height: 500px;
+    padding: 10px;
+    min-height: 220px;
   }
+.card { 
+  margin: 5px;
+}
+  
+.card-title {
+  background-color: rgba(13, 109, 253, 0.589);
+  width: 100%;
+}
 
-  .card-text {
-    min-height: 100px;
-  }
